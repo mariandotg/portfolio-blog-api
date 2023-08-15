@@ -1,0 +1,13 @@
+diff --git a/node_modules/strapi-plugin-placeholder/server/utils.js b/node_modules/strapi-plugin-placeholder/server/utils.js
+index afee787..59d836f 100644
+--- a/node_modules/strapi-plugin-placeholder/server/utils.js
++++ b/node_modules/strapi-plugin-placeholder/server/utils.js
+@@ -8,7 +8,7 @@ const pluginId = require('./plugin-id');
+  * @returns {boolean} whether a placeholder can be generated for the given MIME type
+  */
+ 
+-const isValidMimeType = (mimeType) => mimeType.startsWith('image/');
++const isValidMimeType = (mimeType) => mimeType && mimeType.startsWith('image/');
+ 
+ /**
+  * Helper that retrieves one of the available services of this plugin from Strapi.
